@@ -1,12 +1,13 @@
 #!/bin/sh
-for i in {1..5}; do
+for i in 1 2 3 4 5 
+do
 docker stack deploy dt-test_$i --compose-file docker-compose.yml
 sleep 5
-docker service scale dt-test_twin=0 dt-test_client=0
+docker service scale dt-test_twin_$i=0 dt-test_client_$1=0
 sleep 1
-docker service scale dt-test_twin=1
+docker service scale dt-test_twin_$i=1
 sleep 5
-docker service scale dt-test_client=1
+docker service scale dt-test_client_$i=1
 echo Operation Starting, it $i
 sleep 50
 echo "50%"
