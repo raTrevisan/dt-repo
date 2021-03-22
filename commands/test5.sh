@@ -1,6 +1,6 @@
 #!/bin/sh
 for i in {1..5}; do
-docker stack deploy dt-test --compose-file docker-compose.yml
+docker stack deploy dt-test_$i --compose-file docker-compose.yml
 sleep 5
 docker service scale dt-test_twin=0 dt-test_client=0
 sleep 1
@@ -15,6 +15,6 @@ echo "done"
 mkdir res_$i
 cd res
 docker container ls --format {{.Names}} | xargs -I {} sh -c 'docker logs {} -t --details 2>&1 | tee {}.log'
-docker stack rm dt-test
+docker stack rm dt-test$i
 cd ..
 done
