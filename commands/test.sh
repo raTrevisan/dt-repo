@@ -6,6 +6,7 @@ sleep 1
 docker service scale dt-test_twin=1
 sleep 5
 docker service scale dt-test_client=1
+echo "Starting operation"
 sleep 50
 echo "50%"
 sleep 50

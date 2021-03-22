@@ -1,6 +1,5 @@
 #!/bin/sh
-for i in {1..5};
-do
+for i in {1..5}; do
 docker stack deploy dt-test --compose-file docker-compose.yml
 sleep 5
 docker service scale dt-test_twin=0 dt-test_client=0
