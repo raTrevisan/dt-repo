@@ -3,7 +3,8 @@ for i in 1 2 3 4 5
 do
 docker stack deploy dt-test_$i --compose-file docker-compose.yml
 sleep 5
-docker service scale dt-test_twin_$i=0 dt-test_client_$1=0
+twin = 
+docker service scale "dt-test_"$i"_twin=0" dt-test_client_$1=0
 sleep 1
 docker service scale dt-test_twin_$i=1
 sleep 5
