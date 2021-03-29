@@ -14,7 +14,7 @@ services:
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
       - MQTT_CLIENT_MESSAGES_TO_SEND=1000
       - MQTT_CLIENT_MESSAGE_DELAY_MS=10
-      - MQTT_CLIENT_TOPIC=TEST_TOPIC
+      - MQTT_CLIENT_TOPIC=TEST_TOPIC/+/+
     networks:
       - default
     deploy:
@@ -36,7 +36,7 @@ services:
       - RUST_LOG=info
       - DB_ADDRESS=scylla-db:9042
       - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7c
-      - MQTT_SUBSCRIBED_TOPIC=TEST_TOPIC
+      - MQTT_SUBSCRIBED_TOPIC=+/+/+
     networks:
       - default
     restart: always

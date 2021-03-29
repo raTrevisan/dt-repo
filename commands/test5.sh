@@ -22,6 +22,7 @@ echo "done"
 mkdir res_$i
 cd res_$i
 docker container ls --format {{.Names}} | xargs -I {} sh -c 'docker logs {} -t --details 2>&1 | tee {}.log'
+docker stats --no-stream > stats.log
 docker stack rm dt-test$i
 cd ..
 done
