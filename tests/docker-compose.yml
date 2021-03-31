@@ -64,6 +64,7 @@ services:
       - default
     volumes:
       - ~/var/lib/scylla:/var/lib/scylla
+      - ~/dt-sharedconfig/db/db:/db
     deploy:
       placement:
         constraints:
