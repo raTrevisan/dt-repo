@@ -63,7 +63,7 @@ services:
     networks:
       - default
     volumes:
-      - /var/lib/scylla:/var/lib/scylla
+      - ~/var/lib/scylla:/var/lib/scylla
     deploy:
       placement:
         constraints:
