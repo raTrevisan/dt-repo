@@ -1,4 +1,0 @@
-CONTAINER ID   NAME                                              CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O    PIDS
-ad2df68bc8b8   dt-test_twin.1.akgnxqku0smg754npm37mmyyd          0.05%     1.309MiB / 1.946GiB   0.07%     1.36kB / 962B   0B / 0B      2
-d82846d55f4e   dt-test_client.1.o5746ip0xlosu6w79j8r034ai        0.00%     1.406MiB / 1.946GiB   0.07%     119kB / 212kB   0B / 0B      3
-344973d45bcc   dt-test_mqtt-broker.1.festhm60xue87x4y1moeat0j9   0.12%     121.2MiB / 1.946GiB   6.08%     226kB / 126kB   0B / 270kB   29
