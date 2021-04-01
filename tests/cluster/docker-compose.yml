@@ -12,7 +12,7 @@ services:
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-      - MQTT_CLIENT_MESSAGES_TO_SEND=1000
+      - MQTT_CLIENT_MESSAGES_TO_SEND=500
       - MQTT_CLIENT_MESSAGE_DELAY_MS=10
       - MQTT_CLIENT_TOPIC=A
     networks:
@@ -35,7 +35,7 @@ client_b:
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-      - MQTT_CLIENT_MESSAGES_TO_SEND=1000
+      - MQTT_CLIENT_MESSAGES_TO_SEND=500
       - MQTT_CLIENT_MESSAGE_DELAY_MS=10
       - MQTT_CLIENT_TOPIC=B
     networks:
@@ -58,7 +58,7 @@ client_d:
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-      - MQTT_CLIENT_MESSAGES_TO_SEND=1000
+      - MQTT_CLIENT_MESSAGES_TO_SEND=500
       - MQTT_CLIENT_MESSAGE_DELAY_MS=10
       - MQTT_CLIENT_TOPIC=D
     networks:
@@ -81,7 +81,7 @@ client_c:
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-      - MQTT_CLIENT_MESSAGES_TO_SEND=1000
+      - MQTT_CLIENT_MESSAGES_TO_SEND=500
       - MQTT_CLIENT_MESSAGE_DELAY_MS=10
       - MQTT_CLIENT_TOPIC=C
     networks:
@@ -119,7 +119,7 @@ client_c:
     image: "emqx/emqx:latest"
     environment:
       - EMQX_ZONE__EXTERNAL__MAX_MQUEUE_LEN=0
-      - EMQX_ZONE__EXTERNAL__MQUEUE_PRIORITIES = topic/A=1,topic/B=2,topic/C=3,topic/D=4
+      - EMQX_ZONE__EXTERNAL__MQUEUE_PRIORITIES = A/A/A=1,B/B/B=2,C/C/C=3,D/D/D=4
     networks:
       - default
     restart: always
