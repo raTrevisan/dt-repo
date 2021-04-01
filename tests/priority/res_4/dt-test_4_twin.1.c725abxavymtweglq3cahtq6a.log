@@ -1,0 +1,14 @@
+2021-04-01T05:29:43.842667448Z  [2021-04-01T05:29:43Z INFO  dt_instance] Current Twin: 38162cb0-e585-43d7-b55d-5c240b2bfb7c
+2021-04-01T05:29:43.842730168Z  [2021-04-01T05:29:43Z INFO  dt_instance] Connecting to broker at mqtt-broker:1883
+2021-04-01T05:29:43.842743016Z  [2021-04-01T05:29:43Z INFO  dt_instance] Using default packet size of 10240 KB.
+2021-04-01T05:29:43.849470132Z  [2021-04-01T05:29:43Z INFO  dt_instance] Refreshing topics for twin 38162cb0-e585-43d7-b55d-5c240b2bfb7c - Listen to +/+/+
+2021-04-01T05:29:43.953461727Z  [2021-04-01T05:29:43Z INFO  dt_instance] SubAck { pkid: 1, return_codes: [QoS1] }
+2021-04-01T05:30:13.903001295Z  [2021-04-01T05:30:13Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:30:43.903337574Z  [2021-04-01T05:30:43Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:31:13.905149614Z  [2021-04-01T05:31:13Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:31:43.906240096Z  [2021-04-01T05:31:43Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:32:13.908120309Z  [2021-04-01T05:32:13Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:32:43.910406512Z  [2021-04-01T05:32:43Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:33:13.912476562Z  [2021-04-01T05:33:13Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:33:43.914296668Z  [2021-04-01T05:33:43Z ERROR dt_instance] Unhandled incoming.
+2021-04-01T05:34:13.914407961Z  [2021-04-01T05:34:13Z ERROR dt_instance] Unhandled incoming.
