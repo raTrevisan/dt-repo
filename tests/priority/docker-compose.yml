@@ -120,7 +120,7 @@ services:
     image: "emqx/emqx:latest"
     environment:
       - EMQX_ZONE__EXTERNAL__MAX_MQUEUE_LEN=0
-      - EMQX_ZONE__EXTERNAL__MQUEUE_PRIORITIES = A/A/A=10,B/B/B=50,C/C/C=100,D/D/D=200
+      - EMQX_ZONE__EXTERNAL__MQUEUE_PRIORITIES=A/A/A=10,B/B/B=50,C/C/C=100,D/D/D=200
     networks:
       - default
     restart: always
