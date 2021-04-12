@@ -7,7 +7,7 @@ docker service scale "dt-test_"$i"_twin=0" "dt-test_"$i"_client_a=0" "dt-test_"$
 sleep 1
 docker service scale "dt-test_"$i"_twin=1"
 sleep 10
-docker service scale "dt-test_"$i"_client_a=1" "dt-test_"$i"_client_b=1" "dt-test_"$i"_client_c=1" "dt-test_"$i"_client_d=1" && docker 
+docker service scale "dt-test_"$i"_client_a=1" "dt-test_"$i"_client_b=1" "dt-test_"$i"_client_c=1" "dt-test_"$i"_client_d=1" 
 echo Operation Starting, iteration number $i
 sleep 50
 echo "20%"
