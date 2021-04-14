@@ -11,7 +11,8 @@ docker service scale "dt-test_"$i"_client_a=1" "dt-test_"$i"_client_b=1" "dt-tes
 echo Operation Starting, iteration number $i
 mkdir stats_$i
 cd stats_$i
-for j in $(seq 1 30) do
+for j in $(seq 1 30) 
+do
 echo saving stats
 docker stats --no-stream -> "stats_"$j
 sleep 5
