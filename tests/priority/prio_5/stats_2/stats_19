@@ -1,0 +1,8 @@
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+5e3396cbd7c1   dt-test_2_client_d.1.34181sr0pi4k8cgpok2opfdfc      0.00%     1.684MiB / 3.852GiB   0.04%     3.07MB / 4.07MB   0B / 0B          6
+f7c1f7c9f993   dt-test_2_client_c.1.yje8gev2hxmyq8wq1p9tz745e      24.05%    1.668MiB / 3.852GiB   0.04%     3.05MB / 4.08MB   0B / 0B          6
+bb20563e61d8   dt-test_2_client_b.1.dh3qw0dhoiyw50cm0lkvzzxlw      20.27%    1.668MiB / 3.852GiB   0.04%     3.04MB / 4.08MB   0B / 0B          6
+9b670eb2d3f6   dt-test_2_client_a.1.v0mghx642fzwfpf8u9yaxaapk      23.48%    1.621MiB / 3.852GiB   0.04%     3.41MB / 4.42MB   0B / 0B          6
+c3f93b00542e   dt-test_2_twin.1.qrg8zmoe1em6rpx1bw0pl34jy          0.39%     1.5MiB / 3.852GiB     0.04%     78.6kB / 93.7kB   0B / 0B          4
+1252225f49e3   dt-test_2_scylla-db.1.kclswbska2l9zk0u9a92ed3ua     1.63%     160.9MiB / 3.852GiB   4.08%     1.5kB / 0B        8.05MB / 205MB   34
+c19530edad10   dt-test_2_mqtt-broker.1.nvdf4mnn69t2n4o7fs1b06auz   47.71%    2.145MiB / 3.852GiB   0.05%     144kB / 105kB     0B / 184kB       2
