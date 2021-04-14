@@ -26,3 +26,4 @@ docker stack rm dt-test_$i
 sleep 10
 cd ..
 done
+
