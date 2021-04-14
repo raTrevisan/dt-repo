@@ -1,4 +1,5 @@
 #!/bin/sh
+$i = 1
 docker stack deploy dt-test_$i --compose-file docker-compose.yml
 for i in 1 2 3 4 5 
 do
