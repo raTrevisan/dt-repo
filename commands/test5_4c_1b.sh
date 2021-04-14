@@ -14,7 +14,7 @@ cd stats_$i
 for j in $(seq 1 30) 
 do
 echo saving stats
-docker stats --no-stream -> "stats_"$j
+docker stats --no-stream > "stats_"$j
 sleep 5
 done
 cd ..
