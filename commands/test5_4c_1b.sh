@@ -1,11 +1,7 @@
 #!/bin/sh
-
-for i in 1 2 3 4 5 
+for i in 1 2 3 4 5
 do
-if [$i -eq 1]
-then
-docker stack deploy dt-test --compose-file docker-compose.yml
-fi
+docker stack deploy dt-test_$i --compose-file docker-compose.yml
 sleep 10
 docker service scale "dt-test_"$i"_twin=0" "dt-test_"$i"_client_a=0" "dt-test_"$i"_client_b=0" "dt-test_"$i"_client_c=0" "dt-test_"$i"_client_d=0"
 sleep 10
@@ -20,7 +16,7 @@ cd stats_$i
 for j in $(seq 1 20) 
 do
 echo saving stats
-docker stats --no-stream > "stats_"$j
+docker stats --no-stream > "stats_"$j".log"
 sleep 5
 done
 cd ..
@@ -30,3 +26,4 @@ docker stack rm dt-test_$i
 sleep 10
 cd ..
 done
+
