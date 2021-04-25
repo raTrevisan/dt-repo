@@ -16,11 +16,11 @@ cd stats_$i
 for j in $(seq 1 18) 
 do
 echo saving stats
+sleep 5
 docker stats --no-stream >> "stats.log"
 done
 cd ..
 docker container ls --format {{.Names}} | xargs -I {} sh -c 'docker logs {} -t --details 2>&1 | tee {}.log'
-docker stats --no-stream > stats.log
 docker stack rm dt-test_$i
 sleep 10
 cd ..
