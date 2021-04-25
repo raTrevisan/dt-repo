@@ -12,7 +12,7 @@ services:
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-      - MQTT_CLIENT_MESSAGES_TO_SEND=500
+      - MQTT_CLIENT_MESSAGES_TO_SEND=20
       - MQTT_CLIENT_MESSAGE_DELAY_MS=10
       - MQTT_CLIENT_TOPIC=A/A/A
     networks:
@@ -35,7 +35,7 @@ services:
         - MQTT_BROKER_PORT=1883
         - MQTT_CLIENT_QOS=1
         - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-        - MQTT_CLIENT_MESSAGES_TO_SEND=500
+        - MQTT_CLIENT_MESSAGES_TO_SEND=666
         - MQTT_CLIENT_MESSAGE_DELAY_MS=10
         - MQTT_CLIENT_TOPIC=B/B/B
       networks:
@@ -58,7 +58,7 @@ services:
         - MQTT_BROKER_PORT=1883
         - MQTT_CLIENT_QOS=1
         - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-        - MQTT_CLIENT_MESSAGES_TO_SEND=500
+        - MQTT_CLIENT_MESSAGES_TO_SEND=666
         - MQTT_CLIENT_MESSAGE_DELAY_MS=10
         - MQTT_CLIENT_TOPIC=D/D/D
       networks:
@@ -81,7 +81,7 @@ services:
         - MQTT_BROKER_PORT=1883
         - MQTT_CLIENT_QOS=1
         - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-        - MQTT_CLIENT_MESSAGES_TO_SEND=500
+        - MQTT_CLIENT_MESSAGES_TO_SEND=667
         - MQTT_CLIENT_MESSAGE_DELAY_MS=10
         - MQTT_CLIENT_TOPIC=C/C/C
       networks:
@@ -120,7 +120,7 @@ services:
     image: "emqx/emqx:latest"
     environment:
       - EMQX_ZONE__EXTERNAL__MAX_MQUEUE_LEN=0
-      - EMQX_ZONE__EXTERNAL__MQUEUE_PRIORITIES=A/A/A=10,B/B/B=50,C/C/C=100,D/D/D=200
+      - EMQX_ZONE__EXTERNAL__MQUEUE_PRIORITIES=A/A/A=100,B/B/B=0,C/C/C=0,D/D/D=0
     networks:
       - default
     restart: always
