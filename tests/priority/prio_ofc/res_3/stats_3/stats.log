@@ -1,0 +1,135 @@
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     35.9kB / 70.9kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36kB / 70.9kB     0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.1kB / 70.9kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.01%     1.613MiB / 3.852GiB   0.04%     36.2kB / 70.9kB   0B / 0B          4
+53e794c7c883   dt-test_3_twin.1.q3k4utritzgnr87enl0h7307f          0.01%     1.672MiB / 3.852GiB   0.04%     9.84kB / 6.58kB   0B / 0B          6
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.40%     127.8MiB / 3.852GiB   3.24%     1.78MB / 1.23MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     3.26%     159.1MiB / 3.852GiB   4.03%     6.82kB / 3.86kB   8.14MB / 170MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.07%     1.641MiB / 3.852GiB   0.04%     36.2kB / 71kB     0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.2kB / 71kB     0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.4kB / 71.1kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.5kB / 71.1kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.27%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.23MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     3.88%     159.2MiB / 3.852GiB   4.04%     7.05kB / 3.91kB   8.56MB / 181MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.516MiB / 3.852GiB   0.04%     839B / 513B       0B / 0B          4
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.3kB / 71.1kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.3kB / 71.1kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.5kB / 71.1kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.5kB / 71.1kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.15%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.23MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     3.70%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    9.24MB / 192MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.5MiB / 3.852GiB     0.04%     909B / 513B       0B / 0B          4
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.3kB / 71.1kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.3kB / 71.1kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.5kB / 71.1kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.5kB / 71.1kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.16%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.23MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     3.32%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    9.59MB / 204MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.484MiB / 3.852GiB   0.04%     979B / 513B       0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.3kB / 71.1kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.3kB / 71.1kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.5kB / 71.1kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.6kB / 71.1kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.14%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.23MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.53%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.2MB / 206MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.469MiB / 3.852GiB   0.04%     979B / 513B       0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.4kB / 71.2kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.4kB / 71.3kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.6kB / 71.3kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.7kB / 71.3kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.54%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.62%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.2MB / 206MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.469MiB / 3.852GiB   0.04%     1.12kB / 647B     0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.4kB / 71.3kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.6kB / 71.3kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.6kB / 71.3kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.7kB / 71.3kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.14%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     3.19%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.469MiB / 3.852GiB   0.04%     1.2kB / 731B      0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.4kB / 71.3kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.6kB / 71.3kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.6kB / 71.3kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.7kB / 71.3kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.09%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.51%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.469MiB / 3.852GiB   0.04%     1.2kB / 731B      0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.4kB / 71.3kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.01%     1.621MiB / 3.852GiB   0.04%     36.6kB / 71.3kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.6kB / 71.3kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.10%     1.613MiB / 3.852GiB   0.04%     36.8kB / 71.5kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.30%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.55%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.469MiB / 3.852GiB   0.04%     1.2kB / 731B      0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.5kB / 71.4kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.6kB / 71.5kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.8kB / 71.4kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.9kB / 71.6kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.32%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.54%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.473MiB / 3.852GiB   0.04%     1.34kB / 865B     0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.5kB / 71.4kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.7kB / 71.6kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.8kB / 71.4kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     36.9kB / 71.6kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.21%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.52%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.473MiB / 3.852GiB   0.04%     1.42kB / 949B     0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.5kB / 71.4kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.7kB / 71.6kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.8kB / 71.4kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     37kB / 71.6kB     0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.21%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.52%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.473MiB / 3.852GiB   0.04%     1.42kB / 949B     0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.5kB / 71.4kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.7kB / 71.6kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.8kB / 71.4kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.07%     1.613MiB / 3.852GiB   0.04%     37kB / 71.7kB     0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.20%     126.7MiB / 3.852GiB   3.21%     1.78MB / 1.24MB   0B / 266kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.42%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.473MiB / 3.852GiB   0.04%     1.42kB / 949B     0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.6kB / 71.6kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.9kB / 71.8kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.9kB / 71.6kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     37.1kB / 71.8kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   1.26%     126.8MiB / 3.852GiB   3.22%     1.78MB / 1.24MB   0B / 287kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.63%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.473MiB / 3.852GiB   0.04%     1.49kB / 1.08kB   0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.7kB / 71.6kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.9kB / 71.8kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.9kB / 71.6kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     37.1kB / 71.8kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.40%     126.8MiB / 3.852GiB   3.22%     1.78MB / 1.24MB   0B / 287kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.19%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.473MiB / 3.852GiB   0.04%     1.57kB / 1.17kB   0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.7kB / 71.6kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.00%     1.621MiB / 3.852GiB   0.04%     36.9kB / 71.8kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.00%     1.473MiB / 3.852GiB   0.04%     36.9kB / 71.6kB   0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     37.1kB / 71.8kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.34%     126.8MiB / 3.852GiB   3.22%     1.78MB / 1.24MB   0B / 287kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.62%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35
+CONTAINER ID   NAME                                                CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+fab1a33fa925   dt-test_3_twin.1.bett5dni534fsgp4k7hp5qqdg          0.00%     1.473MiB / 3.852GiB   0.04%     1.57kB / 1.17kB   0B / 0B          3
+95c191ec8b36   dt-test_3_client_d.1.w2kpdjozow7apf4yz9w8sh781      0.00%     1.641MiB / 3.852GiB   0.04%     36.7kB / 71.6kB   0B / 0B          4
+49a44d7aad5d   dt-test_3_client_b.1.zeu1o69zjhkc4a3p8b14b4ltt      0.01%     1.621MiB / 3.852GiB   0.04%     36.9kB / 71.8kB   0B / 0B          4
+5de03d382140   dt-test_3_client_c.1.za5jzz2367k1jsz56fdmq7m88      0.09%     1.473MiB / 3.852GiB   0.04%     37kB / 71.7kB     0B / 0B          4
+3d878d49ed7d   dt-test_3_client_a.1.72r0zi8bam0fv59qhitzsog4z      0.00%     1.613MiB / 3.852GiB   0.04%     37.2kB / 71.9kB   0B / 0B          4
+7c461a62accc   dt-test_3_mqtt-broker.1.d1fp6kzq8sovzq0rqh8qh0vu4   0.38%     126.8MiB / 3.852GiB   3.22%     1.78MB / 1.24MB   0B / 287kB       31
+b987b6523d13   dt-test_3_scylla-db.1.7rr4uqk0068jrn5itscpckx3l     2.13%     161.4MiB / 3.852GiB   4.09%     7.1kB / 3.91kB    10.4MB / 207MB   35

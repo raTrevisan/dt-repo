@@ -1,0 +1,8 @@
+2021-04-25T20:16:23.786887807Z  [2021-04-25T20:16:23Z INFO  dt_instance] Current Twin: 38162cb0-e585-43d7-b55d-5c240b2bfb7c
+2021-04-25T20:16:23.786953683Z  [2021-04-25T20:16:23Z INFO  dt_instance] Connecting to broker at mqtt-broker:1883
+2021-04-25T20:16:23.786966630Z  [2021-04-25T20:16:23Z INFO  dt_instance] Using default packet size of 10240 KB.
+2021-04-25T20:16:23.792999754Z  [2021-04-25T20:16:23Z INFO  dt_instance] Refreshing topics for twin 38162cb0-e585-43d7-b55d-5c240b2bfb7c - Listen to +/+/+
+2021-04-25T20:16:23.898257692Z  [2021-04-25T20:16:23Z INFO  dt_instance] SubAck { pkid: 1, return_codes: [QoS1] }
+2021-04-25T20:16:53.846637369Z  [2021-04-25T20:16:53Z ERROR dt_instance] Unhandled incoming.
+2021-04-25T20:17:23.846516777Z  [2021-04-25T20:17:23Z ERROR dt_instance] Unhandled incoming.
+2021-04-25T20:17:53.846792295Z  [2021-04-25T20:17:53Z ERROR dt_instance] Unhandled incoming.
