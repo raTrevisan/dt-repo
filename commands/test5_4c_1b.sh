@@ -13,11 +13,10 @@ mkdir res_$i
 cd res_$i
 mkdir stats_$i
 cd stats_$i
-for j in $(seq 1 17) 
+for j in $(seq 1 18) 
 do
 echo saving stats
-docker stats --no-stream > "stats_"$j".log"
-sleep 5
+docker stats --no-stream >> "stats.log"
 done
 cd ..
 docker container ls --format {{.Names}} | xargs -I {} sh -c 'docker logs {} -t --details 2>&1 | tee {}.log'
