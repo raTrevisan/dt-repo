@@ -1,0 +1,70 @@
+2021-04-25T19:33:37.621665035Z  [2021-04-25T19:33:37Z INFO  dt_instance] Current Twin: 38162cb0-e585-43d7-b55d-5c240b2bfb7c
+2021-04-25T19:33:37.621735117Z  [2021-04-25T19:33:37Z INFO  dt_instance] Connecting to broker at mqtt-broker:1883
+2021-04-25T19:33:37.621754290Z  [2021-04-25T19:33:37Z INFO  dt_instance] Using default packet size of 10240 KB.
+2021-04-25T19:33:37.629125075Z  [2021-04-25T19:33:37Z INFO  dt_instance] Refreshing topics for twin 38162cb0-e585-43d7-b55d-5c240b2bfb7c - Listen to +/+/+
+2021-04-25T19:33:37.732272440Z  [2021-04-25T19:33:37Z INFO  dt_instance] SubAck { pkid: 1, return_codes: [QoS1] }
+2021-04-25T19:33:41.133942275Z  [2021-04-25T19:33:41Z INFO  dt_instance] A "9 LyUNScD3gctzcS5HLmIazeDrvjI2B2NRTXDWFT7WRQzKDE1JAPO5gr4oyJL3a2"
+2021-04-25T19:33:41.136167031Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.137273471Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.137313055Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.138207820Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.138243847Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.139086308Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.139116354Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.140028597Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.140623518Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.140733058Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.536997102Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.539046436Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.539303442Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.539591042Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.541372353Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.541871592Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.542747224Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.542777837Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.543004401Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:41.543341764Z  [2021-04-25T19:33:41Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.339078279Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.340925373Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.341393902Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.342520674Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.343236187Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.344417308Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.344580969Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.344850011Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.344889917Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:42.345807709Z  [2021-04-25T19:33:42Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.940776798Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.942418908Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.942743269Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.945432156Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.946346625Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.946924680Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.948478404Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.948515081Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.948535721Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:43.949534783Z  [2021-04-25T19:33:43Z ERROR r2d2] IO error: Connection refused (os error 111)
+2021-04-25T19:33:47.159193885Z  [2021-04-25T19:33:47Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:33:47.210175171Z  [2021-04-25T19:33:47Z INFO  dt_instance] A "10 INfstkmpMe63rxQwDuBoVkChMNF3z7cXrkMUny7dJVynLnAPVfUDi49wNPhGY"
+2021-04-25T19:33:47.224840843Z  [2021-04-25T19:33:47Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:33:51.136057630Z  [2021-04-25T19:33:51Z INFO  dt_instance] A "11 CR5THvSxSWuc1qSdZ4Ty3GJu850aMaXR1hYFXV7QyQ1AQ0HfZuOLE45wEXVQM"
+2021-04-25T19:33:51.153006216Z  [2021-04-25T19:33:51Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:33:56.139173302Z  [2021-04-25T19:33:56Z INFO  dt_instance] A "12 nhiDpW6yctjtq2O5xmjamr2xanESdP8RFniVAtyQqKpmqsTAdVwcd25X5yzjX"
+2021-04-25T19:33:56.151325346Z  [2021-04-25T19:33:56Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:01.139357287Z  [2021-04-25T19:34:01Z INFO  dt_instance] A "13 nuy0yXR64Mrxo0kS1kZMBUBiuJei2sGqIr91p7xpvFCS0fBc6eEDzAfYMpbPl"
+2021-04-25T19:34:01.152466977Z  [2021-04-25T19:34:01Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:06.141806396Z  [2021-04-25T19:34:06Z INFO  dt_instance] A "14 37YpIJbEYftrJGCnDKLCEbGxOO7BgRpPNLNESBHtQ9kByr5f4KqLJFW4cBSbp"
+2021-04-25T19:34:06.155845699Z  [2021-04-25T19:34:06Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:07.681303537Z  [2021-04-25T19:34:07Z ERROR dt_instance] Unhandled incoming.
+2021-04-25T19:34:11.141653459Z  [2021-04-25T19:34:11Z INFO  dt_instance] A "15 v6NpTX3egvqSgZDbKnUBOpNv9Ps3ddMv9YjKYKLeEMIfhxkq0U9xjMTQWd0BS"
+2021-04-25T19:34:11.155457879Z  [2021-04-25T19:34:11Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:16.142992212Z  [2021-04-25T19:34:16Z INFO  dt_instance] A "16 RlGCz41H0UxTvry04qpYpZz6MTqFN4liZkVPzJdGl5OGwEnFroqEenmv4naln"
+2021-04-25T19:34:16.157596585Z  [2021-04-25T19:34:16Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:21.143773797Z  [2021-04-25T19:34:21Z INFO  dt_instance] A "17 Zd8iZyjoSyEmdBwStkwJaBSe23aut5dDVxcXNBGuQzgMtGSsf8wHqPdR7NDm4"
+2021-04-25T19:34:21.159271182Z  [2021-04-25T19:34:21Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:26.144846704Z  [2021-04-25T19:34:26Z INFO  dt_instance] A "18 clafQl7UsJaqNZ5fRZ9Razhonajj3yohQpK2gVehFVVfsP0msbsUNTO7I2XpG"
+2021-04-25T19:34:26.159958269Z  [2021-04-25T19:34:26Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:31.147666175Z  [2021-04-25T19:34:31Z INFO  dt_instance] A "19 ZiGVSqvfpqIvOoFGGw9b5lduxNVNVbOrwW2UTELBvXRGbob4gzMorvuwwkpME"
+2021-04-25T19:34:31.163499373Z  [2021-04-25T19:34:31Z ERROR dt_instance] Error inserting data for source A.
+2021-04-25T19:34:37.683715270Z  [2021-04-25T19:34:37Z ERROR dt_instance] Unhandled incoming.
+2021-04-25T19:35:07.684151675Z  [2021-04-25T19:35:07Z ERROR dt_instance] Unhandled incoming.

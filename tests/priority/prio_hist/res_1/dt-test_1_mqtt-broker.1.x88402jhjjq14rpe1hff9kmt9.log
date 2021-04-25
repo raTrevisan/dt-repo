@@ -1,0 +1,46 @@
+2021-04-25T19:13:56.048621737Z  listener.ssl.external.acceptors = "32"
+2021-04-25T19:13:56.048746498Z  listener.ssl.external.max_connections = "102400"
+2021-04-25T19:13:56.048760664Z  listener.tcp.external.acceptors = "64"
+2021-04-25T19:13:56.048770346Z  listener.tcp.external.max_connections = "1024000"
+2021-04-25T19:13:56.048818548Z  listener.ws.external.acceptors = "16"
+2021-04-25T19:13:56.048831860Z  listener.ws.external.max_connections = "102400"
+2021-04-25T19:13:56.048841193Z  listener.wss.external.acceptors = "16"
+2021-04-25T19:13:56.048850279Z  listener.wss.external.max_connections = "102400"
+2021-04-25T19:13:56.048859831Z  log.to = "console"
+2021-04-25T19:13:56.048868711Z  node.max_ets_tables = "2097152"
+2021-04-25T19:13:56.048896921Z  node.max_ports = "1048576"
+2021-04-25T19:13:56.048915417Z  node.name = "3a245bce2b86@10.0.1.10"
+2021-04-25T19:13:56.048925227Z  node.process_limit = "2097152"
+2021-04-25T19:13:56.048934067Z  zone.external.max_mqueue_len = "0"
+2021-04-25T19:13:56.048943111Z  zone.external.mqueue_priorities = "A/A/A=100,B/B/B=0,C/C/C=0,D/D/D=0"
+2021-04-25T19:14:02.704500710Z  Exec: /opt/emqx/erts-11.1.8/bin/erlexec -noshell -noinput +Bd -boot /opt/emqx/releases/4.3-rc.4/start -mode embedded -boot_var ERTS_LIB_DIR /opt/emqx/erts-11.1.8/../lib -mnesia dir "/opt/emqx/data/mnesia/3a245bce2b86@10.0.1.10" -config /opt/emqx/data/configs/app.2021.04.25.19.13.45.config -args_file /opt/emqx/data/configs/vm.2021.04.25.19.13.45.args -vm_args /opt/emqx/data/configs/vm.2021.04.25.19.13.45.args -start_epmd false -epmd_module ekka_epmd -proto_dist ekka -- foreground
+2021-04-25T19:14:02.704528857Z  Root: /opt/emqx
+2021-04-25T19:14:12.207702673Z  Starting emqx on node 3a245bce2b86@10.0.1.10
+2021-04-25T19:14:15.265445628Z  Start http:management listener on 8081 successfully.
+2021-04-25T19:14:15.330065066Z  Start http:dashboard listener on 18083 successfully.
+2021-04-25T19:14:15.595263573Z  2021-04-25 19:14:15.594 [error] ** Generic server emqx_telemetry terminating 
+2021-04-25T19:14:15.595300659Z  ** Last message in was {continue,first_report}
+2021-04-25T19:14:15.595311342Z  ** When Server state == {state,<<"6D130812-A5FA-11EB-8665-43814607057C">>,
+2021-04-25T19:14:15.595321499Z                                 true,"https://telemetry.emqx.io/api/telemetry",
+2021-04-25T19:14:15.595330830Z                                 604800000,#Ref<0.1934811477.2240282625.121219>}
+2021-04-25T19:14:15.595340545Z  ** Reason for termination ==
+2021-04-25T19:14:15.595349453Z  ** {badarg,[{ets,match_object,[emqx_modules,'_'],[]},
+2021-04-25T19:14:15.595358529Z              {ets,tab2list,1,[{file,"ets.erl"},{line,765}]},
+2021-04-25T19:14:15.595367652Z              {emqx_telemetry,active_modules,0,
+2021-04-25T19:14:15.595376477Z                              [{file,"emqx_telemetry.erl"},{line,322}]},
+2021-04-25T19:14:15.595385807Z              {emqx_telemetry,get_telemetry,1,
+2021-04-25T19:14:15.595412645Z                              [{file,"emqx_telemetry.erl"},{line,355}]},
+2021-04-25T19:14:15.595423010Z              {emqx_telemetry,report_telemetry,1,
+2021-04-25T19:14:15.595431763Z                              [{file,"emqx_telemetry.erl"},{line,361}]},
+2021-04-25T19:14:15.595440652Z              {emqx_telemetry,handle_continue,2,
+2021-04-25T19:14:15.595449112Z                              [{file,"emqx_telemetry.erl"},{line,197}]},
+2021-04-25T19:14:15.595457859Z              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,689}]},
+2021-04-25T19:14:15.595466567Z              {gen_server,loop,7,[{file,"gen_server.erl"},{line,431}]},
+2021-04-25T19:14:15.595475330Z              {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+2021-04-25T19:14:15.595484162Z  
+2021-04-25T19:14:15.614253113Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-04-25T19:14:15.618840988Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-04-25T19:14:15.619892618Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-04-25T19:14:15.623822844Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-04-25T19:14:15.626503014Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-04-25T19:14:15.626815228Z  EMQ X Broker 4.3-rc.4 is running now!
