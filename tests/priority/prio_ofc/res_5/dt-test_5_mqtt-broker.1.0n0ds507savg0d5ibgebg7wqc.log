@@ -1,0 +1,106 @@
+2021-04-25T13:40:07.863734372Z  listener.ssl.external.acceptors = "32"
+2021-04-25T13:40:07.863780620Z  listener.ssl.external.max_connections = "102400"
+2021-04-25T13:40:07.863792707Z  listener.tcp.external.acceptors = "64"
+2021-04-25T13:40:07.863801968Z  listener.tcp.external.max_connections = "1024000"
+2021-04-25T13:40:07.863810901Z  listener.ws.external.acceptors = "16"
+2021-04-25T13:40:07.863819778Z  listener.ws.external.max_connections = "102400"
+2021-04-25T13:40:07.863830053Z  listener.wss.external.acceptors = "16"
+2021-04-25T13:40:07.863838910Z  listener.wss.external.max_connections = "102400"
+2021-04-25T13:40:07.863847691Z  log.to = "console"
+2021-04-25T13:40:07.863856248Z  node.max_ets_tables = "2097152"
+2021-04-25T13:40:07.863864833Z  node.max_ports = "1048576"
+2021-04-25T13:40:07.863873303Z  node.name = "250efe0898b2@10.0.6.6"
+2021-04-25T13:40:07.863882071Z  node.process_limit = "2097152"
+2021-04-25T13:40:07.863890774Z  zone.external.max_mqueue_len = "0"
+2021-04-25T13:40:07.863899653Z  zone.external.mqueue_priorities = "A/A/A=10,B/B/B=50,C/C/C=100,D/D/D=200"
+2021-04-25T13:40:10.779456079Z  Exec: /opt/emqx/erts-11.1.8/bin/erlexec -noshell -noinput +Bd -boot /opt/emqx/releases/4.3-rc.4/start -mode embedded -boot_var ERTS_LIB_DIR /opt/emqx/erts-11.1.8/../lib -mnesia dir "/opt/emqx/data/mnesia/250efe0898b2@10.0.6.6" -config /opt/emqx/data/configs/app.2021.04.25.13.40.03.config -args_file /opt/emqx/data/configs/vm.2021.04.25.13.40.03.args -vm_args /opt/emqx/data/configs/vm.2021.04.25.13.40.03.args -start_epmd false -epmd_module ekka_epmd -proto_dist ekka -- foreground
+2021-04-25T13:40:10.779487809Z  Root: /opt/emqx
+2021-04-25T13:40:15.700790737Z  Starting emqx on node 250efe0898b2@10.0.6.6
+2021-04-25T13:40:19.343409477Z  Start http:management listener on 8081 successfully.
+2021-04-25T13:40:19.428490549Z  Start http:dashboard listener on 18083 successfully.
+2021-04-25T13:40:19.681893073Z  2021-04-25 13:40:19.680 [error] ** Generic server emqx_telemetry terminating 
+2021-04-25T13:40:19.681937431Z  ** Last message in was {continue,first_report}
+2021-04-25T13:40:19.681951093Z  ** When Server state == {state,<<"C6C0AEB6-A5CB-11EB-A6A0-DB9CD07749DD">>,
+2021-04-25T13:40:19.681961976Z                                 true,"https://telemetry.emqx.io/api/telemetry",
+2021-04-25T13:40:19.681971803Z                                 604800000,#Ref<0.1609864131.2188640257.102830>}
+2021-04-25T13:40:19.681981717Z  ** Reason for termination ==
+2021-04-25T13:40:19.681991194Z  ** {badarg,[{ets,match_object,[emqx_modules,'_'],[]},
+2021-04-25T13:40:19.682019543Z              {ets,tab2list,1,[{file,"ets.erl"},{line,765}]},
+2021-04-25T13:40:19.682032226Z              {emqx_telemetry,active_modules,0,
+2021-04-25T13:40:19.682041796Z                              [{file,"emqx_telemetry.erl"},{line,322}]},
+2021-04-25T13:40:19.682051379Z              {emqx_telemetry,get_telemetry,1,
+2021-04-25T13:40:19.682073356Z                              [{file,"emqx_telemetry.erl"},{line,355}]},
+2021-04-25T13:40:19.682104294Z              {emqx_telemetry,report_telemetry,1,
+2021-04-25T13:40:19.682117206Z                              [{file,"emqx_telemetry.erl"},{line,361}]},
+2021-04-25T13:40:19.682126559Z              {emqx_telemetry,handle_continue,2,
+2021-04-25T13:40:19.682135507Z                              [{file,"emqx_telemetry.erl"},{line,197}]},
+2021-04-25T13:40:19.682144574Z              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,689}]},
+2021-04-25T13:40:19.682153559Z              {gen_server,loop,7,[{file,"gen_server.erl"},{line,431}]},
+2021-04-25T13:40:19.682162634Z              {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+2021-04-25T13:40:19.682190394Z  
+2021-04-25T13:40:19.714535053Z  2021-04-25 13:40:19.711 [error] ** Generic server emqx_telemetry terminating 
+2021-04-25T13:40:19.714555513Z  ** Last message in was {continue,first_report}
+2021-04-25T13:40:19.714595691Z  ** When Server state == {state,<<"C6C0AEB6-A5CB-11EB-A6A0-DB9CD07749DD">>,
+2021-04-25T13:40:19.714608861Z                                 true,"https://telemetry.emqx.io/api/telemetry",
+2021-04-25T13:40:19.714618286Z                                 604800000,#Ref<0.1609864131.2188640257.102879>}
+2021-04-25T13:40:19.714627688Z  ** Reason for termination ==
+2021-04-25T13:40:19.714636601Z  ** {badarg,[{ets,match_object,[emqx_modules,'_'],[]},
+2021-04-25T13:40:19.714645306Z              {ets,tab2list,1,[{file,"ets.erl"},{line,765}]},
+2021-04-25T13:40:19.714708017Z              {emqx_telemetry,active_modules,0,
+2021-04-25T13:40:19.714720598Z                              [{file,"emqx_telemetry.erl"},{line,322}]},
+2021-04-25T13:40:19.714730047Z              {emqx_telemetry,get_telemetry,1,
+2021-04-25T13:40:19.714739184Z                              [{file,"emqx_telemetry.erl"},{line,355}]},
+2021-04-25T13:40:19.714748703Z              {emqx_telemetry,report_telemetry,1,
+2021-04-25T13:40:19.714778027Z                              [{file,"emqx_telemetry.erl"},{line,361}]},
+2021-04-25T13:40:19.714789018Z              {emqx_telemetry,handle_continue,2,
+2021-04-25T13:40:19.714798253Z                              [{file,"emqx_telemetry.erl"},{line,197}]},
+2021-04-25T13:40:19.714807493Z              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,689}]},
+2021-04-25T13:40:19.714816660Z              {gen_server,loop,7,[{file,"gen_server.erl"},{line,431}]},
+2021-04-25T13:40:19.714825964Z              {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+2021-04-25T13:40:19.714835322Z  
+2021-04-25T13:40:19.737917809Z  2021-04-25 13:40:19.735 [error] ** Generic server emqx_telemetry terminating 
+2021-04-25T13:40:19.737937892Z  ** Last message in was {continue,first_report}
+2021-04-25T13:40:19.737958425Z  ** When Server state == {state,<<"C6C0AEB6-A5CB-11EB-A6A0-DB9CD07749DD">>,
+2021-04-25T13:40:19.737969555Z                                 true,"https://telemetry.emqx.io/api/telemetry",
+2021-04-25T13:40:19.737978889Z                                 604800000,#Ref<0.1609864131.2188640258.101330>}
+2021-04-25T13:40:19.737988179Z  ** Reason for termination ==
+2021-04-25T13:40:19.737996997Z  ** {badarg,[{ets,match_object,[emqx_modules,'_'],[]},
+2021-04-25T13:40:19.738005870Z              {ets,tab2list,1,[{file,"ets.erl"},{line,765}]},
+2021-04-25T13:40:19.738015137Z              {emqx_telemetry,active_modules,0,
+2021-04-25T13:40:19.738024045Z                              [{file,"emqx_telemetry.erl"},{line,322}]},
+2021-04-25T13:40:19.738043806Z              {emqx_telemetry,get_telemetry,1,
+2021-04-25T13:40:19.738055137Z                              [{file,"emqx_telemetry.erl"},{line,355}]},
+2021-04-25T13:40:19.738064196Z              {emqx_telemetry,report_telemetry,1,
+2021-04-25T13:40:19.738084056Z                              [{file,"emqx_telemetry.erl"},{line,361}]},
+2021-04-25T13:40:19.738093136Z              {emqx_telemetry,handle_continue,2,
+2021-04-25T13:40:19.738101856Z                              [{file,"emqx_telemetry.erl"},{line,197}]},
+2021-04-25T13:40:19.738111093Z              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,689}]},
+2021-04-25T13:40:19.738120073Z              {gen_server,loop,7,[{file,"gen_server.erl"},{line,431}]},
+2021-04-25T13:40:19.738129033Z              {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+2021-04-25T13:40:19.738137899Z  
+2021-04-25T13:40:19.760983720Z  2021-04-25 13:40:19.758 [error] ** Generic server emqx_telemetry terminating 
+2021-04-25T13:40:19.761006164Z  ** Last message in was {continue,first_report}
+2021-04-25T13:40:19.761062043Z  ** When Server state == {state,<<"C6C0AEB6-A5CB-11EB-A6A0-DB9CD07749DD">>,
+2021-04-25T13:40:19.761073922Z                                 true,"https://telemetry.emqx.io/api/telemetry",
+2021-04-25T13:40:19.761083799Z                                 604800000,#Ref<0.1609864131.2188640258.101391>}
+2021-04-25T13:40:19.761093723Z  ** Reason for termination ==
+2021-04-25T13:40:19.761102981Z  ** {badarg,[{ets,match_object,[emqx_modules,'_'],[]},
+2021-04-25T13:40:19.761132765Z              {ets,tab2list,1,[{file,"ets.erl"},{line,765}]},
+2021-04-25T13:40:19.761144980Z              {emqx_telemetry,active_modules,0,
+2021-04-25T13:40:19.761154527Z                              [{file,"emqx_telemetry.erl"},{line,322}]},
+2021-04-25T13:40:19.761163992Z              {emqx_telemetry,get_telemetry,1,
+2021-04-25T13:40:19.761173226Z                              [{file,"emqx_telemetry.erl"},{line,355}]},
+2021-04-25T13:40:19.761182564Z              {emqx_telemetry,report_telemetry,1,
+2021-04-25T13:40:19.761463715Z                              [{file,"emqx_telemetry.erl"},{line,361}]},
+2021-04-25T13:40:19.761477239Z              {emqx_telemetry,handle_continue,2,
+2021-04-25T13:40:19.761487158Z                              [{file,"emqx_telemetry.erl"},{line,197}]},
+2021-04-25T13:40:19.761496878Z              {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,689}]},
+2021-04-25T13:40:19.761506961Z              {gen_server,loop,7,[{file,"gen_server.erl"},{line,431}]},
+2021-04-25T13:40:19.761538438Z              {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,226}]}]}
+2021-04-25T13:40:19.761553010Z  
+2021-04-25T13:40:19.809568276Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-04-25T13:40:19.824046945Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-04-25T13:40:19.826579714Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-04-25T13:40:19.838054818Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-04-25T13:40:19.844145751Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-04-25T13:40:19.844166039Z  EMQ X Broker 4.3-rc.4 is running now!

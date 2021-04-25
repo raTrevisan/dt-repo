@@ -1,0 +1,5 @@
+2021-04-25T13:42:18.295471302Z  [2021-04-25T13:42:18Z INFO  dt_instance] Current Twin: 38162cb0-e585-43d7-b55d-5c240b2bfb7c
+2021-04-25T13:42:18.295533702Z  [2021-04-25T13:42:18Z INFO  dt_instance] Connecting to broker at mqtt-broker:1883
+2021-04-25T13:42:18.295546842Z  [2021-04-25T13:42:18Z INFO  dt_instance] Using default packet size of 10240 KB.
+2021-04-25T13:42:18.299397998Z  [2021-04-25T13:42:18Z INFO  dt_instance] Refreshing topics for twin 38162cb0-e585-43d7-b55d-5c240b2bfb7c - Listen to +/+/+
+2021-04-25T13:42:18.403224590Z  [2021-04-25T13:42:18Z INFO  dt_instance] SubAck { pkid: 1, return_codes: [QoS1] }
