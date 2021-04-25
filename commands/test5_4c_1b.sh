@@ -13,7 +13,7 @@ mkdir res_$i
 cd res_$i
 mkdir stats_$i
 cd stats_$i
-for j in $(seq 1 18) 
+for j in $(seq 1 17) 
 do
 echo saving stats
 docker stats --no-stream >> "stats.log"
