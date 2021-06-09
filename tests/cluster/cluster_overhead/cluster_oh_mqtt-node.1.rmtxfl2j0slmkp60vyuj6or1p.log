@@ -1,0 +1,41 @@
+2021-06-09T09:49:42.895040498Z  cluster.discovery = "static"
+2021-06-09T09:49:42.895081305Z  cluster.static.seeds = "node1@emqx_n1.mq.tt, node2@emqx_n2.mq.tt"
+2021-06-09T09:49:42.895096862Z  listener.ssl.external.acceptors = "32"
+2021-06-09T09:49:42.895107232Z  listener.ssl.external.max_connections = "102400"
+2021-06-09T09:49:42.895117434Z  listener.tcp.external.acceptors = "64"
+2021-06-09T09:49:42.895127096Z  listener.tcp.external.max_connections = "1024000"
+2021-06-09T09:49:42.895136672Z  listener.ws.external.acceptors = "16"
+2021-06-09T09:49:42.895146035Z  listener.ws.external.max_connections = "102400"
+2021-06-09T09:49:42.895155493Z  listener.wss.external.acceptors = "16"
+2021-06-09T09:49:42.895164941Z  listener.wss.external.max_connections = "102400"
+2021-06-09T09:49:42.895174563Z  log.to = "console"
+2021-06-09T09:49:42.895183872Z  mqtt.max_packet_size = "64KB"
+2021-06-09T09:49:42.895193326Z  node.max_ets_tables = "2097152"
+2021-06-09T09:49:42.895202932Z  node.max_ports = "1048576"
+2021-06-09T09:49:42.895212130Z  node.name = "node2@emqx_n2.mq.tt"
+2021-06-09T09:49:42.895221739Z  node.process_limit = "2097153"
+2021-06-09T09:49:42.895231064Z  rpc.port_discovery = "manual"
+2021-06-09T09:49:42.895240495Z  zone.external.max_mqueue_len = "0"
+2021-06-09T09:49:45.350357940Z  Exec: /opt/emqx/erts-11.1.8/bin/erlexec -noshell -noinput +Bd -boot /opt/emqx/releases/4.3.3/start -mode embedded -boot_var ERTS_LIB_DIR /opt/emqx/erts-11.1.8/../lib -mnesia dir "/opt/emqx/data/mnesia/node2@emqx_n2.mq.tt" -config /opt/emqx/data/configs/app.2021.06.09.09.49.36.config -args_file /opt/emqx/data/configs/vm.2021.06.09.09.49.36.args -vm_args /opt/emqx/data/configs/vm.2021.06.09.09.49.36.args -start_epmd false -epmd_module ekka_epmd -proto_dist ekka -- foreground
+2021-06-09T09:49:45.350418883Z  Root: /opt/emqx
+2021-06-09T09:49:54.837700194Z  Starting emqx on node node2@emqx_n2.mq.tt
+2021-06-09T09:49:58.371424120Z  Start http:management listener on 8081 successfully.
+2021-06-09T09:49:58.545011047Z  Start http:dashboard listener on 18083 successfully.
+2021-06-09T09:49:58.791870887Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-06-09T09:49:58.807174751Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-06-09T09:49:58.815417774Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-06-09T09:49:58.825876027Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-06-09T09:49:58.827180707Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-06-09T09:49:58.827199212Z  EMQ X Broker 4.3.3 is running now!
+2021-06-09T09:50:01.347478440Z  2021-06-09T09:50:01.346572+00:00 [error] ** Cannot get connection id for node 'node2@emqx_n2.mq.tt'
+2021-06-09T09:50:08.350904778Z  2021-06-09T09:50:08.348187+00:00 [critical] [EMQ X] emqx shutdown for join
+2021-06-09T09:50:08.354171014Z  Stop http:management listener on 0.0.0.0:8081 successfully.
+2021-06-09T09:50:16.611907096Z  Starting emqx on node node2@emqx_n2.mq.tt
+2021-06-09T09:50:16.801491504Z  Start http:management listener on 8081 successfully.
+2021-06-09T09:50:16.867095589Z  Start http:dashboard listener on 18083 successfully.
+2021-06-09T09:50:17.042014171Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-06-09T09:50:17.045705779Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-06-09T09:50:17.046367757Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-06-09T09:50:17.049620120Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-06-09T09:50:17.052212338Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-06-09T09:50:17.052392761Z  EMQ X Broker 4.3.3 is running now!

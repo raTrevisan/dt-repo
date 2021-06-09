@@ -66,7 +66,7 @@ services:
         constraints:
           - node.labels.name==dtwins1
 
-mqtt-node:
+  mqtt-node:
     image: "emqx/emqx:latest"
     environment:
       - EMQX_NAME=node2
