@@ -1,0 +1,51 @@
+2021-06-09T17:23:38.140814475Z  cluster.discovery = "static"
+2021-06-09T17:23:38.141129147Z  cluster.static.seeds = "node1@emqx_n1.mq.tt, node2@emqx_n2.mq.tt, node3@emqx_n3.mq.tt, node4@emqx_n4.mq.tt"
+2021-06-09T17:23:38.141175045Z  listener.ssl.external.acceptors = "32"
+2021-06-09T17:23:38.141190490Z  listener.ssl.external.max_connections = "102400"
+2021-06-09T17:23:38.141200987Z  listener.tcp.external.acceptors = "64"
+2021-06-09T17:23:38.141210871Z  listener.tcp.external.max_connections = "1024000"
+2021-06-09T17:23:38.141220606Z  listener.ws.external.acceptors = "16"
+2021-06-09T17:23:38.141230272Z  listener.ws.external.max_connections = "102400"
+2021-06-09T17:23:38.141240167Z  listener.wss.external.acceptors = "16"
+2021-06-09T17:23:38.141249751Z  listener.wss.external.max_connections = "102400"
+2021-06-09T17:23:38.141259549Z  log.to = "console"
+2021-06-09T17:23:38.141268946Z  mqtt.max_packet_size = "64KB"
+2021-06-09T17:23:38.141278476Z  node.max_ets_tables = "2097152"
+2021-06-09T17:23:38.141287941Z  node.max_ports = "1048576"
+2021-06-09T17:23:38.141297392Z  node.name = "node3@emqx_n3.mq.tt"
+2021-06-09T17:23:38.141306961Z  node.process_limit = "2097153"
+2021-06-09T17:23:38.141316449Z  rpc.port_discovery = "manual"
+2021-06-09T17:23:38.141325859Z  zone.external.max_mqueue_len = "0"
+2021-06-09T17:23:45.021831714Z  Exec: /opt/emqx/erts-11.1.8/bin/erlexec -noshell -noinput +Bd -boot /opt/emqx/releases/4.3.3/start -mode embedded -boot_var ERTS_LIB_DIR /opt/emqx/erts-11.1.8/../lib -mnesia dir "/opt/emqx/data/mnesia/node3@emqx_n3.mq.tt" -config /opt/emqx/data/configs/app.2021.06.09.17.23.20.config -args_file /opt/emqx/data/configs/vm.2021.06.09.17.23.20.args -vm_args /opt/emqx/data/configs/vm.2021.06.09.17.23.20.args -start_epmd false -epmd_module ekka_epmd -proto_dist ekka -- foreground
+2021-06-09T17:23:45.021893021Z  Root: /opt/emqx
+2021-06-09T17:24:00.578373744Z  Starting emqx on node node3@emqx_n3.mq.tt
+2021-06-09T17:24:01.623558391Z  Start http:management listener on 8081 successfully.
+2021-06-09T17:24:01.822224603Z  Start http:dashboard listener on 18083 successfully.
+2021-06-09T17:24:02.065423175Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-06-09T17:24:02.087146265Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-06-09T17:24:02.090262673Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-06-09T17:24:02.110641729Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-06-09T17:24:02.123596266Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-06-09T17:24:02.123620065Z  EMQ X Broker 4.3.3 is running now!
+2021-06-09T17:24:03.523644381Z  2021-06-09T17:24:03.522768+00:00 [error] ** Cannot get connection id for node 'node3@emqx_n3.mq.tt'
+2021-06-09T17:24:17.529370763Z  2021-06-09T17:24:17.525819+00:00 [critical] [EMQ X] emqx shutdown for join
+2021-06-09T17:24:17.530327982Z  Stop http:management listener on 0.0.0.0:8081 successfully.
+2021-06-09T17:24:20.416723233Z  Starting emqx on node node3@emqx_n3.mq.tt
+2021-06-09T17:24:20.653082074Z  Start http:management listener on 8081 successfully.
+2021-06-09T17:24:20.742031557Z  Start http:dashboard listener on 18083 successfully.
+2021-06-09T17:24:20.942492219Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-06-09T17:24:20.949271363Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-06-09T17:24:20.950243012Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-06-09T17:24:20.953572799Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-06-09T17:24:20.956087722Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-06-09T17:24:20.956475111Z  EMQ X Broker 4.3.3 is running now!
+2021-06-09T17:24:29.243016404Z  2021-06-09T17:24:29.242376+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 15 is not found.
+2021-06-09T17:24:29.243254902Z  2021-06-09T17:24:29.242582+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 16 is not found.
+2021-06-09T17:24:29.243486735Z  2021-06-09T17:24:29.242769+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 17 is not found.
+2021-06-09T17:24:29.243703408Z  2021-06-09T17:24:29.242864+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 18 is not found.
+2021-06-09T17:24:29.243888089Z  2021-06-09T17:24:29.243115+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 19 is not found.
+2021-06-09T17:24:29.244407365Z  2021-06-09T17:24:29.243761+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 20 is not found.
+2021-06-09T17:24:29.244654484Z  2021-06-09T17:24:29.244181+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 21 is not found.
+2021-06-09T17:24:29.244801919Z  2021-06-09T17:24:29.244295+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 22 is not found.
+2021-06-09T17:24:29.245232886Z  2021-06-09T17:24:29.244730+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 23 is not found.
+2021-06-09T17:24:29.245568975Z  2021-06-09T17:24:29.244991+00:00 [warning] twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c@10.0.22.4:50732 [Channel] The PUBACK PacketId 24 is not found.
