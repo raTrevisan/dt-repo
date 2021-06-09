@@ -1,0 +1,278 @@
+version: '3'
+
+services:
+  client_a:
+    image: "opendigitaltwin/dt-client-bytes:latest"
+    depends_on:
+      - mqtt-node1
+      - twin
+    environment:
+      - RUST_LOG=info
+      - MQTT_BROKER_ADDRESS=mqtt-node1
+      - MQTT_BROKER_PORT=1883
+      - MQTT_CLIENT_QOS=1
+      - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
+      - MQTT_CLIENT_MESSAGES_TO_SEND=250
+      - MQTT_CLIENT_MESSAGE_DELAY_MS=10
+      - MQTT_CLIENT_TOPIC=A/A/A
+    networks:
+      - default
+    deploy:
+      replicas: 1
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-client-bytes
+
+  client_b:
+    image: "opendigitaltwin/dt-client-bytes:latest"
+    depends_on:
+      - mqtt-node2
+      - twin
+    environment:
+      - RUST_LOG=info
+      - MQTT_BROKER_ADDRESS=mqtt-node2
+      - MQTT_BROKER_PORT=1883
+      - MQTT_CLIENT_QOS=1
+      - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
+      - MQTT_CLIENT_MESSAGES_TO_SEND=250
+      - MQTT_CLIENT_MESSAGE_DELAY_MS=10
+      - MQTT_CLIENT_TOPIC=B/B/B
+    networks:
+      - default
+    deploy:
+      replicas: 1
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-client-bytes
+
+  client_c:
+    image: "opendigitaltwin/dt-client-bytes:latest"
+    depends_on:
+      - mqtt-node3
+      - twin
+    environment:
+      - RUST_LOG=info
+      - MQTT_BROKER_ADDRESS=mqtt-node3
+      - MQTT_BROKER_PORT=1883
+      - MQTT_CLIENT_QOS=1
+      - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
+      - MQTT_CLIENT_MESSAGES_TO_SEND=250
+      - MQTT_CLIENT_MESSAGE_DELAY_MS=10
+      - MQTT_CLIENT_TOPIC=C/C/C
+    networks:
+      - default
+    deploy:
+      replicas: 1
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-client-bytes
+
+
+  client_d:
+    image: "opendigitaltwin/dt-client-bytes:latest"
+    depends_on:
+      - mqtt-node4
+      - twin
+    environment:
+      - RUST_LOG=info
+      - MQTT_BROKER_ADDRESS=mqtt-node4
+      - MQTT_BROKER_PORT=1883
+      - MQTT_CLIENT_QOS=1
+      - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
+      - MQTT_CLIENT_MESSAGES_TO_SEND=250
+      - MQTT_CLIENT_MESSAGE_DELAY_MS=10
+      - MQTT_CLIENT_TOPIC=D/D/D
+    networks:
+      - default
+    deploy:
+      replicas: 1
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-client-bytes
+
+  twin_a:
+    image: "opendigitaltwin/dt-instance:latest"
+    depends_on:
+      - mqtt-node1
+      - scylla-db
+    environment:
+      - MQTT_BROKER_ADDRESS=mqtt-node1
+      - MQTT_BROKER_PORT=1883
+      - MQTT_INSTANCE_QOS=1
+      - RUST_LOG=info
+      - DB_ADDRESS=scylla-db:9042
+      - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7a
+      - MQTT_SUBSCRIBED_TOPIC=A/A/A
+    networks:
+      - default
+    restart: always
+    deploy:
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-instance
+
+  twin_b:
+    image: "opendigitaltwin/dt-instance:latest"
+    depends_on:
+      - mqtt-node2
+      - scylla-db
+    environment:
+      - MQTT_BROKER_ADDRESS=mqtt-node2
+      - MQTT_BROKER_PORT=1883
+      - MQTT_INSTANCE_QOS=1
+      - RUST_LOG=info
+      - DB_ADDRESS=scylla-db:9042
+      - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7b
+      - MQTT_SUBSCRIBED_TOPIC=B/B/B
+    networks:
+      - default
+    restart: always
+    deploy:
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-instance
+
+  twin_c:
+    image: "opendigitaltwin/dt-instance:latest"
+    depends_on:
+      - mqtt-node3
+      - scylla-db
+    environment:
+      - MQTT_BROKER_ADDRESS=mqtt-node3
+      - MQTT_BROKER_PORT=1883
+      - MQTT_INSTANCE_QOS=1
+      - RUST_LOG=info
+      - DB_ADDRESS=scylla-db:9042
+      - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7c
+      - MQTT_SUBSCRIBED_TOPIC=C/C/C
+    networks:
+      - default
+    restart: always
+    deploy:
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-instance
+    
+  twin_d:
+    image: "opendigitaltwin/dt-instance:latest"
+    depends_on:
+      - mqtt-node4
+      - scylla-db
+    environment:
+      - MQTT_BROKER_ADDRESS=mqtt-node4
+      - MQTT_BROKER_PORT=1883
+      - MQTT_INSTANCE_QOS=1
+      - RUST_LOG=info
+      - DB_ADDRESS=scylla-db:9042
+      - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7d
+      - MQTT_SUBSCRIBED_TOPIC=D/D/D
+    networks:
+      - default
+    restart: always
+    deploy:
+      placement:    
+        constraints:
+          - node.labels.name==dtwins1
+    command: dt-instance
+
+  mqtt-node1:
+    image: "emqx/emqx:latest"
+    environment:
+      - EMQX_NAME=node1
+      - EMQX_HOST=emqx_n1.mq.tt
+      - EMQX_NODE__PROCESS_LIMIT=2097153
+      - EMQX_ZONE__EXTERNAL__MAX_MQUEUE_LEN=0
+      - EMQX_MQTT__MAX_PACKET_SIZE=64KB
+      - EMQX_CLUSTER__DISCOVERY=static
+      - EMQX_CLUSTER__STATIC__SEEDS=node1@emqx_n1.mq.tt, node2@emqx_n2.mq.tt, node3@emqx_n3.mq.tt, node4@emqx_n4.mq.tt
+    networks:
+      default:
+        aliases:
+          - emqx_n1.mq.tt
+    restart: always
+    deploy:
+      placement:
+        constraints:
+          - node.labels.name==dtwins1
+
+  mqtt-node2:
+    image: "emqx/emqx:latest"
+    environment:
+      - EMQX_NAME=node2
+      - EMQX_HOST=emqx_n2.mq.tt
+      - EMQX_NODE__PROCESS_LIMIT=2097153
+      - EMQX_ZONE__EXTERNAL__MAX_MQUEUE_LEN=0
+      - EMQX_MQTT__MAX_PACKET_SIZE=64KB
+      - EMQX_CLUSTER__DISCOVERY=static
+      - EMQX_CLUSTER__STATIC__SEEDS=node1@emqx_n1.mq.tt, node2@emqx_n2.mq.tt, node3@emqx_n3.mq.tt, node4@emqx_n4.mq.tt
+    networks:
+      default:
+        aliases:
+          - emqx_n2.mq.tt
+    restart: always
+    deploy:
+      placement:
+        constraints:
+          - node.labels.name==dtwins1
+
+  mqtt-node3:
+    image: "emqx/emqx:latest"
+    environment:
+      - EMQX_NAME=node3
+      - EMQX_HOST=emqx_n3.mq.tt
+      - EMQX_NODE__PROCESS_LIMIT=2097153
+      - EMQX_ZONE__EXTERNAL__MAX_MQUEUE_LEN=0
+      - EMQX_MQTT__MAX_PACKET_SIZE=64KB
+      - EMQX_CLUSTER__DISCOVERY=static
+      - EMQX_CLUSTER__STATIC__SEEDS=node1@emqx_n1.mq.tt, node2@emqx_n2.mq.tt, node3@emqx_n3.mq.tt, node4@emqx_n4.mq.tt
+    networks:
+      default:
+        aliases:
+          - emqx_n3.mq.tt
+    restart: always
+    deploy:
+      placement:
+        constraints:
+          - node.labels.name==dtwins1
+
+
+  mqtt-node4:
+    image: "emqx/emqx:latest"
+    environment:
+      - EMQX_NAME=node4
+      - EMQX_HOST=emqx_n4.mq.tt
+      - EMQX_NODE__PROCESS_LIMIT=2097153
+      - EMQX_ZONE__EXTERNAL__MAX_MQUEUE_LEN=0
+      - EMQX_MQTT__MAX_PACKET_SIZE=64KB
+      - EMQX_CLUSTER__DISCOVERY=static
+      - EMQX_CLUSTER__STATIC__SEEDS=node1@emqx_n1.mq.tt, node2@emqx_n2.mq.tt, node3@emqx_n3.mq.tt, node4@emqx_n4.mq.tt
+    networks:
+      default:
+        aliases:
+          - emqx_n4.mq.tt
+    restart: always
+    deploy:
+      placement:
+        constraints:
+          - node.labels.name==dtwins1
+
+
+  scylla-db:
+    image: scylladb/scylla
+    networks:
+      - default
+    volumes:
+      - ~/var/lib/scylla:/var/lib/scylla
+    deploy:
+      placement:
+        constraints:
+         - node.labels.name==dtwins1
+networks:
+  default:
