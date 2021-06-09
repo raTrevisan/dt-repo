@@ -1,0 +1,43 @@
+2021-06-09T14:00:12.279214744Z  cluster.discovery = "static"
+2021-06-09T14:00:12.279277546Z  cluster.static.seeds = "node1@emqx_n1.mq.tt, node2@emqx_n2.mq.tt, node3@emqx_n3.mq.tt, node4@emqx_n4.mq.tt"
+2021-06-09T14:00:12.279292674Z  listener.ssl.external.acceptors = "32"
+2021-06-09T14:00:12.279302737Z  listener.ssl.external.max_connections = "102400"
+2021-06-09T14:00:12.279312754Z  listener.tcp.external.acceptors = "64"
+2021-06-09T14:00:12.279322463Z  listener.tcp.external.max_connections = "1024000"
+2021-06-09T14:00:12.279332312Z  listener.ws.external.acceptors = "16"
+2021-06-09T14:00:12.279341841Z  listener.ws.external.max_connections = "102400"
+2021-06-09T14:00:12.279351427Z  listener.wss.external.acceptors = "16"
+2021-06-09T14:00:12.279360993Z  listener.wss.external.max_connections = "102400"
+2021-06-09T14:00:12.279370435Z  log.to = "console"
+2021-06-09T14:00:12.279379812Z  mqtt.max_packet_size = "64KB"
+2021-06-09T14:00:12.279389227Z  node.max_ets_tables = "2097152"
+2021-06-09T14:00:12.279398724Z  node.max_ports = "1048576"
+2021-06-09T14:00:12.279408304Z  node.name = "node2@emqx_n2.mq.tt"
+2021-06-09T14:00:12.279417912Z  node.process_limit = "2097153"
+2021-06-09T14:00:12.279427507Z  rpc.port_discovery = "manual"
+2021-06-09T14:00:12.279436957Z  zone.external.max_mqueue_len = "0"
+2021-06-09T14:00:18.555737235Z  Exec: /opt/emqx/erts-11.1.8/bin/erlexec -noshell -noinput +Bd -boot /opt/emqx/releases/4.3.3/start -mode embedded -boot_var ERTS_LIB_DIR /opt/emqx/erts-11.1.8/../lib -mnesia dir "/opt/emqx/data/mnesia/node2@emqx_n2.mq.tt" -config /opt/emqx/data/configs/app.2021.06.09.13.59.59.config -args_file /opt/emqx/data/configs/vm.2021.06.09.13.59.59.args -vm_args /opt/emqx/data/configs/vm.2021.06.09.13.59.59.args -start_epmd false -epmd_module ekka_epmd -proto_dist ekka -- foreground
+2021-06-09T14:00:18.555847223Z  Root: /opt/emqx
+2021-06-09T14:00:44.806939687Z  Starting emqx on node node2@emqx_n2.mq.tt
+2021-06-09T14:00:47.193754028Z  Start http:management listener on 8081 successfully.
+2021-06-09T14:00:47.604466794Z  Start http:dashboard listener on 18083 successfully.
+2021-06-09T14:00:48.279971533Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-06-09T14:00:48.328068293Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-06-09T14:00:48.328093133Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-06-09T14:00:48.344924376Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-06-09T14:00:48.344969431Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-06-09T14:00:48.344982982Z  EMQ X Broker 4.3.3 is running now!
+2021-06-09T14:00:50.443490289Z  2021-06-09T14:00:50.442967+00:00 [error] ** Cannot get connection id for node 'node2@emqx_n2.mq.tt'
+2021-06-09T14:01:02.668232371Z  2021-06-09T14:01:02.667607+00:00 [error] ** Cannot get connection id for node 'node2@emqx_n2.mq.tt'
+2021-06-09T14:01:23.677318576Z  2021-06-09T14:01:23.673739+00:00 [critical] [EMQ X] emqx shutdown for join
+2021-06-09T14:01:23.679174404Z  Stop http:management listener on 0.0.0.0:8081 successfully.
+2021-06-09T14:01:28.616797191Z  Starting emqx on node node2@emqx_n2.mq.tt
+2021-06-09T14:01:28.809946922Z  Start http:management listener on 8081 successfully.
+2021-06-09T14:01:28.867277978Z  Start http:dashboard listener on 18083 successfully.
+2021-06-09T14:01:29.051472699Z  Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+2021-06-09T14:01:29.055386031Z  Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+2021-06-09T14:01:29.056186470Z  Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+2021-06-09T14:01:29.059898566Z  Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+2021-06-09T14:01:29.062383840Z  Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+2021-06-09T14:01:29.062641695Z  EMQ X Broker 4.3.3 is running now!
+2021-06-09T14:01:44.928755117Z  2021-06-09T14:01:44.927963+00:00 [warning] [Alarm Handler] Alarm high_system_memory_usage is activated, System memory usage is higher than 70%
