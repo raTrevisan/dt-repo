@@ -4,11 +4,11 @@ services:
   client_a:
     image: "opendigitaltwin/dt-client-bytes:latest"
     depends_on:
-      - mqtt-broker
+      - mqtt-node4
       - twin
     environment:
       - RUST_LOG=info
-      - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_ADDRESS=mqtt-node4
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
@@ -27,11 +27,11 @@ services:
   client_b:
     image: "opendigitaltwin/dt-client-bytes:latest"
     depends_on:
-      - mqtt-node
+      - mqtt-node3
       - twin
     environment:
       - RUST_LOG=info
-      - MQTT_BROKER_ADDRESS=mqtt-node1
+      - MQTT_BROKER_ADDRESS=mqtt-node3
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
@@ -50,7 +50,7 @@ services:
   client_c:
     image: "opendigitaltwin/dt-client-bytes:latest"
     depends_on:
-      - mqtt-node
+      - mqtt-node2
       - twin
     environment:
       - RUST_LOG=info
@@ -74,11 +74,11 @@ services:
     client_d:
     image: "opendigitaltwin/dt-client-bytes:latest"
     depends_on:
-      - mqtt-node
+      - mqtt-node1
       - twin
     environment:
       - RUST_LOG=info
-      - MQTT_BROKER_ADDRESS=mqtt-node3
+      - MQTT_BROKER_ADDRESS=mqtt-node1
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
